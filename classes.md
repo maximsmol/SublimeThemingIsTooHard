@@ -13,10 +13,10 @@ popup_control             | Autocomplete | `group: container` | none | none
 auto_complete             | Autocomplete | `group: container`, `row_padding`, `dark_content` | none | none
 auto_complete_label       | Autocomplete | `group: fgbg` | none | none
 table_row                 | Autocomplete | `group: container` | `selected` | none
-scroll_area_control       | Scroll bars *(indirectly)* | `overlay` | none | Preference `overlay_scroll_bars`
-scroll_bar_control        | Scroll bars | `group: container`, `blur` | `horizontal` | Preference `overlay_scroll_bars`
-scroll_corner_control     | Scroll bars | `group: container`, `blur` | `horizontal` | Preference `overlay_scroll_bars`
-puck_control              | Scroll bars | `group: container`, `blur` | `horizontal` | Preference `overlay_scroll_bars`
+scroll_area_control       | Scroll bar *(indirectly)* | `overlay` | none | Preference `overlay_scroll_bars`
+scroll_bar_control        | Scroll bar | `group: container`, `blur` | `horizontal` | Preference `overlay_scroll_bars`
+scroll_corner_control     | Scroll bar | `group: container`, `blur` | `horizontal` | Preference `overlay_scroll_bars`
+puck_control              | Scroll bar | `group: container`, `blur` | `horizontal` | Preference `overlay_scroll_bars`
 panel_control             | Group: panels | `group: container` | none | none
 quick_panel               | Quick panel, Mini quick panel | `group: container`, `row_padding`, `dark_content` | none | none
 quick_panel_row           | Quick panel | `group: container` | `selected` | none
