@@ -31,7 +31,7 @@ parents | array of rules not specifying customizations **todo: what if they cont
 Rule `A` overrides rule `B`, defined in the same file iff `B` is defined prior to `A` in a given `.sublime-theme` file.
 Rule `A` overrides rule `B`, in another file iff `A`'s file is prior to `B`'s in the file priority order.
 
-File priority order (analogous to the [preferences file priority order](https://www.sublimetext.com/docs/3/settings.html) **todo: is it so?**):
+File priority order **todo: is it so?**:
 
 1. {packages}/Theme - {themeName}/{themeName}.sublime-theme
 1. {packages}/User/{themeName}.sublime-theme
@@ -95,7 +95,7 @@ Each [XML plist](http://www.apple.com/DTDs/PropertyList-1.0.dtd) `Icon ({iconNam
 Key | Type | Description
 --- | ---- | ---------
 `scope` | string, comma-separated list | Specifies targeted files by scope (the same scopes are used in color schemes)
-`settings` | dictionary | Contains the only known setting: `icon` **todo: any other settings?**
+`settings` | dictionary | Contains only the setting: `icon`
 `settings`/`icons` | string | Contains the icon name, which specifies the icon file as in: `{packages}/Theme - {themeName}/icons/{iconName}.png`
 
 Icon file path is filled in as `layer0.texture` in `icon_file_type` class
