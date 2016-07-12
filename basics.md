@@ -6,9 +6,9 @@
 
 `{themeName}` is the name of your theme
 
-`Default.sublime-theme` can be found in the `/default/` folder of this repository. **todo: add the instructions for taking the file out of ST**
+**todo: add the instructions for taking `Default.sublime-theme` out of ST**
 
-1. Copy the contents of `Default.sublime-theme` into a new file at `{packages}/Theme - {themeName}/{themeName}.sublime-theme`.
+1. Copy the contents of [`Default.sublime-theme`](default/Default.sublime-theme) into a new file at `{packages}/Theme - {themeName}/{themeName}.sublime-theme`.
 1. Open ST's preferences (default shortcut is: `super+,` on *nix; and `ctrl+,` on Windows) and put the line `"theme": "{themeName}.sublime-theme"` there. This will change the current theme to your new theme file.
 
 # Theming basics
