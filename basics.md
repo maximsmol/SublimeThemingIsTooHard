@@ -99,3 +99,38 @@ Key | Type | Description
 `settings`/`icons` | string | Contains the icon name, which specifies the icon file as in: `{packages}/Theme - {themeName}/icons/{iconName}.png`
 
 Icon file path is filled in as `layer0.texture` in `icon_file_type` class
+
+# Textures
+
+Textures are `.png` files. They support transparency. When a texture is too small (**todo: or too big?**) it is normally stretched (unless `layerN.repeat` is `true`), for this stretching to give adequate results, texture's center should be specified by the `layerN.inner_margin` customization. If texture path is set to `''` or any other invalid value, the texture is replaced by an image containing only the color white. If a texture is not found, it is replaced by a strange-looking bright mess of colors, so a missing texture can be easily found.
+
+# Borders
+
+To create a border surrounding a `group: container` element do the following:
+
+1. Create a new layer in the said container's rule (this layer is later referred to as `layerN`)
+1. Set `layerN.draw_center` to `False`
+1. Set elements of `layerN.inner_margin` to the respective border widths
+1. If not border is visible, set elements of `content_margin` to the respective border widths plus previous values.
+
+# Negative margins and paddings
+
+Many customizations specifying margins and paddings can be given negative values, so they make the default margin/padding smaller, not larger.
+
+This technique was tested for:
+* `content_margin`
+* `row_padding`
+
+# Animations
+
+ST's themes support animations.
+
+**todo: write about animations**
+
+# Troubleshooting
+
+Problem                          | Solution
+-------------------------------- | --------
+A container's layer is not show  | Check that `layerN.opacity` is specified and is not 0. Check that the layer is not painted upon by other layers or other components. Check ST's console for error messages (maybe the element is not a container).
+Texture is strange at it's edges | Check that `layerN.inner_margin` is specified. Check that no other layer is visible through the texture. Check that not other layer is overlaying the texture. Check ST's console for error messages (maybe the element is not a container and you are seeing through to the container's texture).
+There are no file sidebar icons  | Check that `icons` folder is present. It is not inherited from the `Default - Theme` package for some reason. See `File sidebar icons` at [`basics.md`](basics.md)
