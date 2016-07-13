@@ -1,54 +1,54 @@
-Class                     | Affected elements | Customizations | Attributes | See also
-------------------------- | ----------------- | -------------- | ---------------- | --------
-label_control             | Button | `group: text` | none | none
-grid_layout_control       | Layout border | `border_size`, `border_color` | none | none
-sheet_container_control   | **todo: add** | **todo: add** | none | none
-text_line_control         | Text field, Group: panels | `group: container` | none | `Widgets` at `basics.md`
-dropdown_button_control   | Drop down button | `group: container` | `hover` | none
-tool_tip_control          | Tooltip | `group: container` | none | none
-tool_tip_label_control    | Tooltip | `group: text` | none | none
-button_control            | Button | `group: container` | `hover`, `pressed` | none
-icon_button_control       | Icon button | `group: container` | `left`, `right`, `selected`, `hover` | Classes starting with `icon_`
-popup_control             | Autocomplete | `group: container` | none | none
-auto_complete             | Autocomplete | `group: container`, `row_padding`, `dark_content` | none | none
-auto_complete_label       | Autocomplete | `group: fgbg` | none | none
-table_row                 | Autocomplete | `group: container` | `selected` | none
-scroll_area_control       | Scroll bar *(indirectly)* | `overlay` | none | Preference `overlay_scroll_bars`
-scroll_bar_control        | Scroll bar | `group: container`, `blur` | `horizontal` | Preference `overlay_scroll_bars`
-scroll_corner_control     | Scroll bar | `group: container`, `blur` | `horizontal` | Preference `overlay_scroll_bars`
-puck_control              | Scroll bar | `group: container`, `blur` | `horizontal` | Preference `overlay_scroll_bars`
-panel_control             | Group: panels | `group: container` | none | none
-quick_panel               | Quick panel, Mini quick panel | `group: container`, `row_padding`, `dark_content` | none | none
-quick_panel_row           | Quick panel | `group: container` | `selected` | none
-quick_panel_label         | Quick panel, Mini quick panel | `group: fgbg` | none | none
-quick_panel_path_label    | Quick panel | `group: fgbg` | none | none
-quick_panel_score_label   | **todo: add** | `group: fgbg` | none | none
-overlay_control           | Mini quick panel | `group: container` | none | none
-mini_quick_panel_row      | Mini quick panel | `group: container` | `selected` | none
-sidebar_container         | Sidebar | `group: container` | none | none
-sidebar_tree              | Sidebar | `group: container`, `indent`, `indent_offset`, `indent_top_level`, `dark_content` | none | none
-tree_row                  | Sidebar | `group: container` | `selected`, `hover`, `expandable`, `expanded` | none
-sidebar_heading           | Sidebar | `group: text` | none | none
-sidebar_label             | Sidebar | `group: text` | none | none
-icon_folder               | Sidebar | `group: container` | none | none
-icon_file_type            | Sidebar | `group: container` | none | `File sidebar icons` at `basics.md`
-disclosure_button_control | Sidebar | `group: container` | none | none
-close_button              | Sidebar | `group: container` | none | none
-minimap_control           | Minimap | `viewport_color`, `viewport_opacity` | `hover` | Preference `always_show_minimap_viewport`
-status_bar                | Status bar | `group: container` | none | none
-status_button             | Status bar | `group: container` | none | none
-fold_button_control       | Fold buttons | `group: container` | `expanded`, `hover` | none
-tabset_control            | Tabs | `group: container`, `tab_overlap`, `tab_width`, `tab_min_width`, `tab_height`, `mouse_wheel_switch` | `group: fileColors` | Preference `mouse_wheel_switches_tabs`
-tab_control               | Tabs | `group: container`, `max_margin_trim`, `hit_test_level`, `tint_index`, `tint_modifier` | `selected`, `group: fileColors`, `dirty` | none
-tab_label                 | Tabs | `group: fgbg` | `selected`, `group: fileColors`, `fade` | none
-tab_close_button          | Tabs | `group: container` | `selected`, `hover`, `dirty` | Preference `show_tab_close_buttons`
-icon_regex                | Find dialog, Find in files dialog, Replace dialog | `group: container` | none | none
-icon_case                 | Find dialog, Find in files dialog, Replace dialog | `group: container` | none | none
-icon_highlight            | Find dialog, Replace dialog | `group: container` | none | none
-icon_in_selection         | Find dialog, Replace dialog | `group: container` | none | none
-icon_reverse              | **todo: add** | `group: container` | none | none
-icon_whole_word           | Find dialog, Find in files dialog, Replace dialog | `group: container` | none | none
-icon_wrap                 | Find dialog, Replace dialog | `group: container` | none | none
-icon_preserve_case        | Replace dialog | `group: container` | none | none
-icon_context              | Find in files dialog | `group: container` | none | none
-icon_use_buffer           | Find in files dialog | `group: container` | none | none
+Class                     | Affected elements                                 | Customizations                                                                                      | Attributes                                    | See also
+------------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------- | --------
+label_control             | Button                                            | `group: text`                                                                                       | none                                          | none
+grid_layout_control       | Layout border                                     | `border_size`, `border_color`                                                                       | none                                          | none
+sheet_container_control   | **todo: add**                                     | **todo: add**                                                                                       | none                                          | none
+text_line_control         | Text field, Group: panels                         | `group: container`                                                                                  | none                                          | `Widgets` at [`basics.md`](basics.md)
+dropdown_button_control   | Drop down button                                  | `group: container`                                                                                  | `hover`                                       | none
+tool_tip_control          | Tooltip                                           | `group: container`                                                                                  | none                                          | none
+tool_tip_label_control    | Tooltip                                           | `group: text`                                                                                       | none                                          | none
+button_control            | Button                                            | `group: container`                                                                                  | `hover`, `pressed`                            | none
+icon_button_control       | Icon button                                       | `group: container`                                                                                  | `left`, `right`, `selected`, `hover`          | Classes starting with `icon_`
+popup_control             | Autocomplete                                      | `group: container`                                                                                  | none                                          | none
+auto_complete             | Autocomplete                                      | `group: container`, `row_padding`, `dark_content`                                                   | none                                          | none
+auto_complete_label       | Autocomplete                                      | `group: fgbg`                                                                                       | none                                          | none
+table_row                 | Autocomplete                                      | `group: container`                                                                                  | `selected`                                    | none
+scroll_area_control       | Scroll bar *(indirectly)*                         | `overlay`                                                                                           | none                                          | Preference `overlay_scroll_bars`
+scroll_bar_control        | Scroll bar                                        | `group: container`, `blur`                                                                          | `horizontal`                                  | Preference `overlay_scroll_bars`
+scroll_corner_control     | Scroll bar                                        | `group: container`, `blur`                                                                          | `horizontal`                                  | Preference `overlay_scroll_bars`
+puck_control              | Scroll bar                                        | `group: container`, `blur`                                                                          | `horizontal`                                  | Preference `overlay_scroll_bars`
+panel_control             | Group: panels                                     | `group: container`                                                                                  | none                                          | none
+quick_panel               | Quick panel, Mini quick panel                     | `group: container`, `row_padding`, `dark_content`                                                   | none                                          | none
+quick_panel_row           | Quick panel                                       | `group: container`                                                                                  | `selected`                                    | none
+quick_panel_label         | Quick panel, Mini quick panel                     | `group: fgbg`                                                                                       | none                                          | none
+quick_panel_path_label    | Quick panel                                       | `group: fgbg`                                                                                       | none                                          | none
+quick_panel_score_label   | **todo: add**                                     | `group: fgbg`                                                                                       | none                                          | none
+overlay_control           | Mini quick panel                                  | `group: container`                                                                                  | none                                          | none
+mini_quick_panel_row      | Mini quick panel                                  | `group: container`                                                                                  | `selected`                                    | none
+sidebar_container         | Sidebar                                           | `group: container`                                                                                  | none                                          | none
+sidebar_tree              | Sidebar                                           | `group: container`, `indent`, `indent_offset`, `indent_top_level`, `dark_content`                   | none                                          | none
+tree_row                  | Sidebar                                           | `group: container`                                                                                  | `selected`, `hover`, `expandable`, `expanded` | none
+sidebar_heading           | Sidebar                                           | `group: text`                                                                                       | none                                          | none
+sidebar_label             | Sidebar                                           | `group: text`                                                                                       | none                                          | none
+icon_folder               | Sidebar                                           | `group: container`                                                                                  | none                                          | none
+icon_file_type            | Sidebar                                           | `group: container`                                                                                  | none                                          | `File sidebar icons` at `basics.md`
+disclosure_button_control | Sidebar                                           | `group: container`                                                                                  | none                                          | none
+close_button              | Sidebar                                           | `group: container`                                                                                  | none                                          | none
+minimap_control           | Minimap                                           | `viewport_color`, `viewport_opacity`                                                                | `hover`                                       | Preference `always_show_minimap_viewport`
+status_bar                | Status bar                                        | `group: container`                                                                                  | none                                          | none
+status_button             | Status bar                                        | `group: container`                                                                                  | none                                          | none
+fold_button_control       | Fold buttons                                      | `group: container`                                                                                  | `expanded`, `hover`                           | none
+tabset_control            | Tabs                                              | `group: container`, `tab_overlap`, `tab_width`, `tab_min_width`, `tab_height`, `mouse_wheel_switch` | `group: fileColors`                           | Preference `mouse_wheel_switches_tabs`
+tab_control               | Tabs                                              | `group: container`, `max_margin_trim`, `hit_test_level`, `tint_index`, `tint_modifier`              | `selected`, `group: fileColors`, `dirty`      | none
+tab_label                 | Tabs                                              | `group: fgbg`                                                                                       | `selected`, `group: fileColors`, `fade`       | none
+tab_close_button          | Tabs                                              | `group: container`                                                                                  | `selected`, `hover`, `dirty`                  | Preference `show_tab_close_buttons`
+icon_regex                | Find dialog, Find in files dialog, Replace dialog | `group: container`                                                                                  | none                                          | none
+icon_case                 | Find dialog, Find in files dialog, Replace dialog | `group: container`                                                                                  | none                                          | none
+icon_highlight            | Find dialog, Replace dialog                       | `group: container`                                                                                  | none                                          | none
+icon_in_selection         | Find dialog, Replace dialog                       | `group: container`                                                                                  | none                                          | none
+icon_reverse              | **todo: add**                                     | `group: container`                                                                                  | none                                          | none
+icon_whole_word           | Find dialog, Find in files dialog, Replace dialog | `group: container`                                                                                  | none                                          | none
+icon_wrap                 | Find dialog, Replace dialog                       | `group: container`                                                                                  | none                                          | none
+icon_preserve_case        | Replace dialog                                    | `group: container`                                                                                  | none                                          | none
+icon_context              | Find in files dialog                              | `group: container`                                                                                  | none                                          | none
+icon_use_buffer           | Find in files dialog                              | `group: container`                                                                                  | none                                          | none
