@@ -40,7 +40,7 @@ status_button             | Status bar | `group: container` | none | none
 fold_button_control       | Fold buttons | `group: container` | `expanded`, `hover` | none
 tabset_control            | Tabs | `group: container`, `tab_overlap`, `tab_width`, `tab_min_width`, `tab_height`, `mouse_wheel_switch` | `group: fileColors` | Preference `mouse_wheel_switches_tabs`
 tab_control               | Tabs | `group: container`, `max_margin_trim`, `hit_test_level`, `tint_index`, `tint_modifier` | `selected`, `group: fileColors`, `dirty` | none
-tab_label                 | Tabs | `group: fgbg` | `selected`, `group: fileColors` | none
+tab_label                 | Tabs | `group: fgbg` | `selected`, `group: fileColors`, `fade` | none
 tab_close_button          | Tabs | `group: container` | `selected`, `hover`, `dirty` | Preference `show_tab_close_buttons`
 icon_regex                | Find dialog, Find in files dialog, Replace dialog | `group: container` | none | none
 icon_case                 | Find dialog, Find in files dialog, Replace dialog | `group: container` | none | none
