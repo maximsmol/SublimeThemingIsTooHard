@@ -29,9 +29,11 @@ settings | array of string | Specifies that a rule is applied iff every preferen
 parents | array of rules not specifying customizations **todo: what if they contain customizations?** | Specifies that a rule is applied iff the target element is a child (**todo: can be an indirect child?**) of the target element of the rule in the array **todo: what if multiple rules are in the array?**
 
 Rule `A` overrides rule `B`, defined in the same file iff `B` is defined prior to `A` in a given `.sublime-theme` file.
-Rule `A` overrides rule `B`, in another file iff `A`'s file is prior to `B`'s in the file priority order.
+Rule `A` overrides rule `B` which is defined in another file iff `A` is in a package, priority of which is lower than `B`'s package's priority.
 
-File priority order **todo: is it so?**:
+A package has higher priority, when the folder that contains it has higher priority. Additionally, a package has higher priority, when it goes first in the list sorted by package name in ascending order.
+
+Folder priority list:
 
 1. {packages}/Theme - {themeName}/{themeName}.sublime-theme
 1. {packages}/User/{themeName}.sublime-theme
