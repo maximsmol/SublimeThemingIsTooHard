@@ -1,3 +1,5 @@
+# Classes?
+
 Classes are the most important part of every selector.
 They specify the elements that are to be styled.
 This is why they are often used as synonym with the elements in question.
@@ -351,18 +353,95 @@ Classes styling the actual icons:
 <!-- #-#-#-#-#-#-#-#- -->
 
 # `popup_control`
+Styles the autocomplete.
+Overlayed by [`auto_complete`](#auto_complete)
 
 ### Attributes
 None known
 
 ### Customizations
-None known
+* [`Container`](customizations.md#container)
+	* [`layerN.texture`](customizations.md#container)
+	* [`layerN.tint`](customizations.md#container)
+	* [`layerN.opacity`](customizations.md#container)
+	* [`layerN.draw_center`](customizations.md#container)
+	* [`layerN.inner_margin`](customizations.md#container)
+	* [`content_margin`](customizations.md#container)
 
 ### Affects
-None known
+* Autocomplete
+	![](img/autocomplete/popup_control.png "Screenshot of the autocomplete popup")
 
 ### Possible parents
 None known
+
+### Possible children
+* [`auto_complete`](#auto_complete)
+* [`auto_complete_label`](#auto_complete_label)
+* [`table_row`](#table_row)
+
+### See also
+None
+
+<!-- #-#-#-#-#-#-#-#- -->
+
+# `auto_complete`
+Style the autocomplete.
+Overlayed by [`table_row`](#table_row)
+
+### Attributes
+None known
+
+### Customizations
+* [`Container`](customizations.md#container)
+	* [`layerN.texture`](customizations.md#container)
+	* [`layerN.tint`](customizations.md#container)
+	* [`layerN.opacity`](customizations.md#container)
+	* [`layerN.draw_center`](customizations.md#container)
+	* [`layerN.inner_margin`](customizations.md#container)
+	* [`content_margin`](customizations.md#container)
+* [`row_padding`](customizations.md#row_padding)
+* [`dark_content`](customizations.md#dark_content)
+
+### Affects
+* Autocomplete
+	![Autocomplete with table_row invisible](img/autocomplete/auto_complete.png "Screenshot of the autocomplete popup")
+
+### Possible parents
+* [`popup_control`](#popup_control)
+
+### Possible children
+* [`auto_complete_label`](#auto_complete_label)
+* [`table_row`](#table_row)
+
+### See also
+None
+
+<!-- #-#-#-#-#-#-#-#- -->
+
+# `auto_complete_label`
+
+### Attributes
+None known
+
+### Customizations
+* [`fg`](customizations.md#auto_complete_label)
+* [`bg`](customizations.md#auto_complete_label)
+* [`selected_fg`](customizations.md#auto_complete_label)
+* [`selected_bg`](customizations.md#auto_complete_label)
+* [`match_fg`](customizations.md#auto_complete_label)
+* [`match_bg`](customizations.md#auto_complete_label)
+* [`selected_match_fg`](customizations.md#auto_complete_label)
+* [`selected_match_bg`](customizations.md#auto_complete_label)
+
+### Affects
+* Autocomplete text
+	![Autocomplete text with all variations set to equal colors](img/autocomplete/auto_complete_label.png "Screenshot of the autocomplete popup")
+
+### Possible parents
+* [`popup_control`](#popup_control)
+* [`auto_complete`](#auto_complete)
+* [`table_row`](#table_row)
 
 ### Possible children
 None known
@@ -370,26 +449,23 @@ None known
 ### See also
 None
 
-
-# `auto_complete`
-
-### Attributes
-
-### Customizations
-
-
-# `auto_complete_label`
-
-### Attributes
-
-### Customizations
-
+<!-- #-#-#-#-#-#-#-#- -->
 
 # `table_row`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `scroll_area_control`
@@ -398,12 +474,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `scroll_bar_control`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `scroll_corner_control`
@@ -412,12 +508,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `puck_control`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `panel_control`
@@ -426,12 +542,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `quick_panel`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `quick_panel_row`
@@ -440,12 +576,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `quick_panel_label`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `quick_panel_path_label`
@@ -454,12 +610,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `quick_panel_score_label`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `overlay_control`
@@ -468,12 +644,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `mini_quick_panel_row`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `sidebar_container`
@@ -482,12 +678,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `sidebar_tree`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `tree_row`
@@ -496,12 +712,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `sidebar_heading`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `sidebar_label`
@@ -510,12 +746,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `icon_folder`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `icon_file_type`
@@ -524,12 +780,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `disclosure_button_control`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `close_button`
@@ -538,12 +814,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `minimap_control`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `status_bar`
@@ -552,12 +848,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `status_button`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `fold_button_control`
@@ -566,12 +882,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `tabset_control`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `tab_control`
@@ -580,12 +916,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `tab_label`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `tab_close_button`
@@ -594,12 +950,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `icon_regex`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `icon_case`
@@ -608,12 +984,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `icon_highlight`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `icon_in_selection`
@@ -622,12 +1018,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `icon_reverse`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `icon_whole_word`
@@ -636,12 +1052,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `icon_wrap`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 # `icon_preserve_case`
@@ -650,6 +1086,16 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `icon_context`
 
@@ -657,12 +1103,32 @@ None
 
 ### Customizations
 
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
+
 
 # `icon_use_buffer`
 
 ### Attributes
 
 ### Customizations
+
+### Affects
+
+### Possible parents
+
+### Possible children
+
+### See also
+
+<!-- #-#-#-#-#-#-#-#- -->
 
 
 
