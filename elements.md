@@ -19,7 +19,7 @@ Tabs | Select `View -> Show Tabs` in the menu bar; look at the tab listing at th
 Text field | Open `Find dialog` element; look at the text field at the bottom
 Tooltip | Open `Find dialog` element; for a couple of seconds mouse over any of the buttons with icons on the left of `Find dialog` element
 
-Some groups of elements are affected by a lot of different properties
+Some groups of elements are affected by a lot of different customizations:
 
 Element groups | Contents
 -------------- | --------
