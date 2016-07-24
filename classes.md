@@ -328,7 +328,7 @@ Note: `left` and `right` attributes are combined to style buttons with no neighb
 	* [`content_margin`](customizations.md#container)
 
 ### Affects
-* Buttons in the [`find dialogs`](elements.md#find_dialogs)
+* Buttons in the [`find dialogs`](elements.md#find_dialogs) **todo: add pictures**
 
 ### Possible parents
 * [`panel_control`](#panel_control)
@@ -377,8 +377,8 @@ None known
 
 ### Possible children
 * [`auto_complete`](#auto_complete)
-* [`auto_complete_label`](#auto_complete_label)
 * [`table_row`](#table_row)
+* [`auto_complete_label`](#auto_complete_label)
 
 ### See also
 None
@@ -386,7 +386,7 @@ None
 <!-- #-#-#-#-#-#-#-#- -->
 
 # `auto_complete`
-Style the autocomplete.
+Styles the autocomplete.
 Overlayed by [`table_row`](#table_row)
 
 ### Attributes
@@ -411,8 +411,8 @@ None known
 * [`popup_control`](#popup_control)
 
 ### Possible children
-* [`auto_complete_label`](#auto_complete_label)
 * [`table_row`](#table_row)
+* [`auto_complete_label`](#auto_complete_label)
 
 ### See also
 None
@@ -420,6 +420,7 @@ None
 <!-- #-#-#-#-#-#-#-#- -->
 
 # `auto_complete_label`
+Styles the text it contains
 
 ### Attributes
 None known
@@ -452,38 +453,61 @@ None
 <!-- #-#-#-#-#-#-#-#- -->
 
 # `table_row`
+Styles the rows in autocomplete.
 
 ### Attributes
+* [`selected`](customizations.md#selected)
 
 ### Customizations
+* [`Container`](customizations.md#container)
+	* [`layerN.texture`](customizations.md#container)
+	* [`layerN.tint`](customizations.md#container)
+	* [`layerN.opacity`](customizations.md#container)
+	* [`layerN.draw_center`](customizations.md#container)
+	* [`layerN.inner_margin`](customizations.md#container)
+	* [`content_margin`](customizations.md#container)
 
 ### Affects
+* Autocomplete row
+	![Autocomplete row with only selected rows styled](img/autocomplete/table_row.png "Screenshot of the autocomplete popup")
 
 ### Possible parents
+* [`popup_control`](#popup_control)
+* [`auto_complete`](#auto_complete)
 
 ### Possible children
+* [`auto_complete_label`](#auto_complete_label)
 
 ### See also
+None
 
 <!-- #-#-#-#-#-#-#-#- -->
-
 
 # `scroll_area_control`
+Used to switch overlay scrollbars
 
 ### Attributes
+None known
 
 ### Customizations
+* [`overlay`](customizations.md#scroll_area_control)
 
 ### Affects
+If the scrollbars are overlayed
+![Overlayed scrollbars](img/scrollbars/overlayed.png "Screenshot of overlayed scrollbars")
+or not
+![Not overlayed scrollbars](img/scrollbars/not_overlayed.png "Screenshot of not overlayed scrollbars")
 
 ### Possible parents
+None known
 
 ### Possible children
+None known
 
 ### See also
+Preference `overlay_scroll_bars`
 
 <!-- #-#-#-#-#-#-#-#- -->
-
 
 # `scroll_bar_control`
 
@@ -500,7 +524,6 @@ None
 ### See also
 
 <!-- #-#-#-#-#-#-#-#- -->
-
 
 # `scroll_corner_control`
 
